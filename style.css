@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 :root{
+  --gutter-large: 25px;
   --gutter-main: 20px;
   --gutter-small: 15px;
+  --gutter-tiny: 10px;
   --color-1: #fff;
   --color-2: #d3a373;
   --color-3: #faedcd;
+  --color-4: #e9edca;
+  --color-5: #cdd5ae;
   --color-text: rgb(21,20,26);
 }
 
@@ -34,8 +38,10 @@ li.pair{
 }
 header {
   display:grid;
-  grid-template: 1fr 1fr / 70% 1fr;
+  grid-template: min-content min-content / 70% 1fr;
   grid-area: 1/2/2/3;
+  gap: var(--gutter-tiny) var(--gutter-main);
+  padding: var(--gutter-main) var(--gutter-large);
   background: var(--color-1);
 }
 main {
@@ -68,6 +74,9 @@ nav h1 {
   width:50px;
   height:50px;
   border-radius:50%;
+}
+.user-name{
+  font-weight: 600;
 }
 .greeting-and-buttons{
   display:grid;
@@ -129,4 +138,62 @@ main > div {
 }
 #trending-card{
   padding:15px;
+}
+
+.searchbar{
+  height:1.2rem;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  border-radius: 100px;
+  border: none;
+  background: var(--color-4);
+  font-family: inherit;
+}
+#searchfield,
+.greeting,
+.user-actions,
+.user-info {
+  display: flex;
+  /* padding: var(--gutter-small); */
+  align-items: center;
+}
+.user-info {
+  padding: 0;
+}
+#searchfield img,
+.greeting img,
+.user-actions img {
+  margin-right: var(--gutter-small);
+}
+.user-actions {
+  justify-content: flex-end;
+}
+#greeting-message {
+  letter-spacing: 0.1rem;
+  line-height: 1.4rem;
+}
+#greeting-username {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.greeting {
+  padding-top: 0;
+}
+.buttons {
+  width: min-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--gutter-small);
+}
+
+button {
+  height: 2.5rem;
+  width: 8rem;
+  border: none;
+  border-radius: 100px;
+  background: var(--color-5);
+  font-size: inherit;
+  font-weight: 600;
+  color: var(--color-1);
 }
