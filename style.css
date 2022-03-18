@@ -78,14 +78,23 @@ main > div {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .card{
-  display:grid;
-  grid-template-columns: max-content auto;
   border-radius: 10px;
   background:var(--color-1);
+}
+#projects .card{
+  display:grid;
+  grid-template-columns: max-content auto;
 }
 .color-strip{
   height:100%;
   width:5px;
   background: red;
   border-radius: 10px 0 0 10px;
+}
+#announcements-card{
+  height:100%;
+  padding:15px;
+  display:grid;
+  grid-template-rows: repeat(1fr 1px 1fr max-content 1fr);
+  box-sizing: border-box;
 }
