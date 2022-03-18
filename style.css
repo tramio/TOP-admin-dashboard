@@ -76,6 +76,9 @@ main > div {
   display:grid;
   gap:var(--gutter-main);
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(150px, 30vh));
+  grid-auto-rows: clamp(150px, 25vh, 30vh);
+  grid-auto-columns: clamp(200px, 1fr);
 }
 .card{
   border-radius: 10px;
@@ -97,4 +100,11 @@ main > div {
   display:grid;
   grid-template-rows: repeat(1fr 1px 1fr max-content 1fr);
   box-sizing: border-box;
+}
+.trending-user{
+  display:grid;
+  grid-template-columns: max-content auto;
+}
+#trending-card{
+  padding:15px;
 }
