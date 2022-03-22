@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 :root{
+  --gutter-larger: 30px;
   --gutter-large: 25px;
   --gutter-main: 20px;
   --gutter-small: 15px;
@@ -13,6 +14,7 @@
   --color-6: #f3c673;
   --color-text: rgb(21,20,26);
   --color-text-2: rgb(44, 50, 61);
+  --color-text-3: rgb(232, 236, 247);
 }
 
 body {
@@ -23,6 +25,9 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: var(--color-text);
+}
+p {
+  line-height: 1.2em;
 }
 nav {
   padding: var(--gutter-main);
@@ -55,6 +60,8 @@ header {
   background: var(--color-1);
 }
 main {
+  padding: var(--gutter-small);
+  gap: var(--gutter-tiny);
   display:grid;
   grid-template: auto auto / 70% 1fr;
   grid-area: 2/2/3/3;
@@ -125,7 +132,6 @@ main > div {
   border-radius: 10px;
   background:var(--color-1);
   overflow: hidden;
-
 }
 #projects .card{
   display:grid;
@@ -140,8 +146,11 @@ main > div {
 #announcements-card{
   height:100%;
   padding:15px;
-  display:grid;
-  grid-template-rows: repeat(1fr 1px 1fr max-content 1fr);
+  display:flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--gutter-main) var(--gutter-larger);
   box-sizing: border-box;
 }
 .trending-user{
@@ -213,7 +222,7 @@ button {
   box-shadow: 2px 2px 5px var(--color-2);
 }
 
-.project-content p {
+.card p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -230,4 +239,15 @@ button {
 
 .project-actions {
   align-self: flex-end;
+}
+
+#announcements-card p {
+  font-size: 0.9rem;
+  -webkit-line-clamp: 3;
+}
+
+hr {
+  width: 100%;
+  margin: var(--gutter-tiny);
+  border: 0.5px solid var(--color-text-3);
 }
