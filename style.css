@@ -35,6 +35,8 @@ li.pair{
 .pair {
   display: grid;
   grid-template-columns: max-content max-content;
+  align-items: center;
+  gap: 1rem;
 }
 header {
   display:grid;
