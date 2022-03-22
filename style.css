@@ -174,7 +174,6 @@ main > div {
 .user-actions,
 .user-info {
   display: flex;
-  /* padding: var(--gutter-small); */
   align-items: center;
 }
 .user-info {
@@ -251,4 +250,7 @@ main h1 {
 }
 button {
   box-shadow: 3px 3px 0 var(--color-7);
+}
+.user-avatar {
+  min-width: 50px;
 }
