@@ -254,3 +254,6 @@ button {
 .user-avatar {
   min-width: 50px;
 }
+a {
+  color: inherit;
+}
