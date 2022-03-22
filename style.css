@@ -10,7 +10,8 @@
   --color-3: #faedcd;
   --color-4: #e9edca;
   --color-5: #cdd5ae;
-  --color-6: #f3c673;
+  --color-6: #f3d49a;
+  --color-7: #a8b674;
   --color-text: rgb(21,20,26);
   --color-text-2: rgb(44, 50, 61);
   --color-text-3: rgb(232, 236, 247);
@@ -75,7 +76,7 @@ h2 {
   font-weight: 600;
 }
 nav h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .user-actions{
@@ -166,6 +167,7 @@ main > div {
   border: none;
   background: var(--color-4);
   font-family: inherit;
+  box-shadow: inset 0 0 10px var(--color-5);
 }
 #searchfield,
 .greeting,
@@ -246,4 +248,7 @@ hr {
 }
 main h1 {
   margin-bottom: 0.8rem;
+}
+button {
+  box-shadow: 3px 3px 0 var(--color-7);
 }
