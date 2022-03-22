@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 :root{
-  --gutter-larger: 30px;
   --gutter-large: 25px;
   --gutter-main: 20px;
   --gutter-small: 15px;
@@ -143,24 +142,22 @@ main > div {
   background: var(--color-6);
   border-radius: 10px 0 0 10px;
 }
-#announcements-card{
+#announcements-card,
+#trending-card {
   height:100%;
   padding:15px;
   display:flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: var(--gutter-main) var(--gutter-larger);
+  padding: var(--gutter-large);
   box-sizing: border-box;
 }
 .trending-user{
-  display:grid;
-  grid-template-columns: max-content auto;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
 }
-#trending-card{
-  padding:15px;
-}
-
 .searchbar{
   height:1.2rem;
   width: 100%;
@@ -221,7 +218,6 @@ button {
 .card {
   box-shadow: 2px 2px 5px var(--color-2);
 }
-
 .card p {
   overflow: hidden;
   display: -webkit-box;
@@ -229,25 +225,25 @@ button {
   -webkit-box-orient: vertical;
   color: var(--color-text-2);
 }
-
 .project-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: var(--gutter-tiny);
 }
-
 .project-actions {
   align-self: flex-end;
 }
-
-#announcements-card p {
+#announcements-card p,
+#trending-card p {
   font-size: 0.9rem;
   -webkit-line-clamp: 3;
 }
-
 hr {
   width: 100%;
   margin: var(--gutter-tiny);
   border: 0.5px solid var(--color-text-3);
+}
+main h1 {
+  margin-bottom: 0.8rem;
 }
