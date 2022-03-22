@@ -123,8 +123,8 @@ main > div {
   height:100%;
   display:grid;
   gap:var(--gutter-main);
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(150px, 30vh));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(175px, 30vh));
   grid-auto-rows: clamp(150px, 25vh, 30vh);
   grid-auto-columns: clamp(200px, 1fr);
 }
