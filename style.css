@@ -10,7 +10,9 @@
   --color-3: #faedcd;
   --color-4: #e9edca;
   --color-5: #cdd5ae;
+  --color-6: #f3c673;
   --color-text: rgb(21,20,26);
+  --color-text-2: rgb(44, 50, 61);
 }
 
 body {
@@ -122,6 +124,8 @@ main > div {
 .card{
   border-radius: 10px;
   background:var(--color-1);
+  overflow: hidden;
+
 }
 #projects .card{
   display:grid;
@@ -130,7 +134,7 @@ main > div {
 .color-strip{
   height:100%;
   width:5px;
-  background: red;
+  background: var(--color-6);
   border-radius: 10px 0 0 10px;
 }
 #announcements-card{
@@ -204,4 +208,26 @@ button {
   font-size: inherit;
   font-weight: 600;
   color: var(--color-1);
+}
+.card {
+  box-shadow: 2px 2px 5px var(--color-2);
+}
+
+.project-content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: var(--color-text-2);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--gutter-tiny);
+}
+
+.project-actions {
+  align-self: flex-end;
 }
