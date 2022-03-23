@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="media/favicon.png">
+  <script src="script.js" defer></script>
   <title>Admin Dashboard!</title>
 </head>
 <body>
@@ -28,6 +29,7 @@
           <p id="greeting-username">Morgan Oakley (@morgan)</p>
         </div>
       </div>
+      <img id="hamburger" src="media/icons/menu.svg" alt="">
       <div class="buttons">
         <button>New</button>
         <button>Upload</button>
@@ -35,12 +37,13 @@
       </div>
     </div>
   </header>
-  <nav>
-    <a href="#" class="tab">
+  <nav class="MQ-hidden">
+    <a href="#" class="tab nav-header">
       <div id="website-logo" class=pair>
         <img src="media/icons/logo.svg" alt="">
         <h1>Dashboard</h1>
       </div>
+      <img id="nav-closing-btn" class="hidden" src="media/icons/x.svg" alt="">
     </a>
     <ul>
       <a href="#" class="tab">
